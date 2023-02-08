@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -20,6 +21,7 @@ int main(){
     int choice = 0;
 
 
+    cout << fixed << showpoint << setprecision(2);
     cout << "Measuring male or female?\n"
     << "[1] Male\n"
     << "[2] Female\n"
