@@ -11,9 +11,9 @@ int main(){
     double growthA, growthB;
 
     cout << "Enter population for group A: "; cin >> popA;
-    cout << "Enter growth rate for group A (as decimal): "; cin >> growthA;
+    cout << "Enter growth rate for group A (as percent): "; cin >> growthA;
     cout << "Enter population for group B: "; cin >> popB;
-    cout << "Enter growth rate for group B (as decimal): "; cin >> growthB;
+    cout << "Enter growth rate for group B (as percent): "; cin >> growthB;
 
     while (popA < popB){
         popA = popA * (1 + (growthA / 100));
