@@ -25,22 +25,22 @@ int main(){
         getline(cin, tNumber);
     while (index <= tNumber.length()) {
         switch (tNumber[index]) {
-            case 'a':
-            case 'b':
-            case 'c':
-            case 'A':
-            case 'B':
-            case 'C':
+            case 'a': // Initially I was going to try looping the array but couldn't get it working.
+            case 'b': // Then I discovered something called "switch fall-through"
+            case 'c': // I'm pretty sure it's usually looked at as an error or improper but in this instance
+            case 'A': // we can use it to catch the character we want and even if the case
+            case 'B': // doesn't have a statement in it, our program will "fall-through"
+            case 'C': // the cases until it hits a case that has one.
                 cout << 2;
                 count++;
                 break;
-            case 'd':
-            case 'e':
-            case 'f':
+            case 'd': // E.g. the loop hits the character 'e'
+            case 'e': // This case matches 'e' but has no statements in it
+            case 'f': // The program "falls" through the cases until it reaches
             case 'D':
             case 'E':
-            case 'F':
-                cout << 3;
+            case 'F': // HERE - and executes the statements
+                cout << 3; // Here
                 count++;
                 break;
             case 'g':
