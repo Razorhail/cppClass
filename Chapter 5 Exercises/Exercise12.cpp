@@ -21,7 +21,7 @@ int main(){
         years++;
     }
 
-    cout << fixed << setprecision(0);
+    cout << fixed << setprecision(0); // Fractions of people aren't people so only count whole people (drop the decimal)
     cout << "Group A will be greater than or equal to Group B in " << years << " years" << endl;
     cout << "Group populations will be: \n"
             "Group A: " << popA <<
