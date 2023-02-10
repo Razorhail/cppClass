@@ -18,7 +18,7 @@ int main() {
     }
 
     // loop to check if num is prime
-    for (i = 2; i <= num/2; ++i){ //not sure how much it matters to pre-increment here
+    for (i = 2; i <= num/2; ++i){
 //        cout << i;
         if (num % i == 0){
             prime = false;
