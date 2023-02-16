@@ -44,7 +44,7 @@ int main(){
 
     for (bottomRange; bottomRange <= topRange; bottomRange++){
         sumOfPrimes += isPrime(bottomRange);
-        if (isPrime(bottomRange + 2)){
+        if (isPrime(bottomRange) && isPrime(bottomRange + 2)){
             numberOfTwinPrimes++;
         }
     }
